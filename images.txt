@@ -1,6 +1,12 @@
-nginx
-#支持私库
+# ntfy 消息推送服务
+binwiederhier/ntfy:latest
+
+# RSSHub 服务
+diygod/rsshub:latest
+
+# 你原本文件中的内容
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 xhofe/alist:latest
-#支持指定架构
---platform=linux/arm64 xiaoyaliu/alist
+
+# 指定架构的 AList（注意：部分 Action 脚本是通过镜像名后加参数实现的）
+--platform=linux/arm64 xiaoyaliu/alist:latest
